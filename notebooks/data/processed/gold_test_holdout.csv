@@ -1,0 +1,639 @@
+text,label,label_id
+"Авария 10666
+ИС: Service Desk
+Описание: Задержка обработки платежей, очередь в Kafka > 120к сообщений.
+Назначено на группу: Сопровождение банкоматов
+DION: https://meet.bank.local/room/netops",INFRA_MESSAGE_BROKER_QUEUE_OVERFLOW,13
+"Авария EM-90094 - FraudScoring Service
+Описание аварии Ошибка авторизаций по картам. Узел sap-fi01.prod.bank.lan перегружен (CPU > 91%).
+Текст ошибки: Kubernetes CrashLoopBackOff for pod payment-api-*****
+
+, просьба подключиться в DION: https://meet.bank.local/room/devops",APP_CARD_AUTH_BUSINESS_ERROR,1
+"Авария: EM-04255
+ИС: SWIFT Gateway
+Описание: Порог по количеству сессий превышен: 73 concurrent connections на veeam-proxy01.
+Назначено на группу: Служба резервного копирования
+DION: https://meet.bank.local/room/monitoring",INFRA_CONNECTION_REFUSED,6
+"Авария: [EM-70934] (https://servicedesk.ru/EM-70934) 
+ИС: FraudScoring Service Описание: !!Учебная авария!! Сбой соединения с БД. ORA-12514 на узле authsrv01.prod.bank.lan. 
+Назначено на группу: Сопровождение DWH 
+DION: https://meet.bank.local/room/oracle",OTHER,27
+"Устранена авария 1 категории EM-100324
+Время устранения: 2025-10-21 04:34:00
+Описание: Восстановлена доступность API авторизации. Причина — перегрузка пула подключений.",APP_API_AUTH_500_ERROR,0
+"Контур: Хотфикс
+EM-20229 
+ИС: Mobile Banking API 
+Описание: Недоступен порт 443 на authsrv01.prod.bank.lan. Ошибка TLS handshake. 
+Куратор: Васильев Андрей Сергеевич 
+DION: https://meet.bank.local/room/fraud
+Коллеги от ИС 175, просьба подключиться к аварийной конференции",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
+"Авария: EM-03639
+ИС: Oracle RAC Cluster
+Описание: Отсутствует обновление метрики CPU Load с хоста mb-api01 более 35 мин.
+Назначено на группу: EDM Support
+DION: https://meet.bank.local/room/siem",INFRA_MONITORING_METRIC_MISSING,15
+"DION: https://meet.bank.local/room/oracle
+Описание: Недоступность API авторизации. HTTP 500 на gitlab-ci01.corp.local.
+ИС: Oracle RAC Cluster
+[EM-53451] (https://servicedesk.ru/EM-53451)",APP_API_AUTH_500_ERROR,0
+"Контур: ПРЕПРОД
+EM-11074 
+ИС: FraudScoring Service 
+Описание: Повышенная задержка запросов API. Средний RTT = 488 мс. Узел: veeam-proxy01.bank.lan. 
+Куратор: Волкова Анастасия Олеговна 
+DION: https://meet.bank.local/room/postgres
+Коллеги от ИС 535, просьба подключиться к аварийной конференции",INFRA_NETWORK_LATENCY_RTT,17
+"Авария на сетевой инфра структуре [EM-30446] (https://servicedesk.ru/EM-30446) Казань, ул. Баумана, 14. Ошибки CRC на порту Switch-02.",INFRA_SYSTEM_WIDESPREAD_FAILURE_ALERT,24
+"Авария: [EM-41149] (https://servicedesk.ru/EM-41149) 
+ИС: Internet Banking 
+Описание: Недоступен порт 443 на opcon-batch01.prod.bank.lan. Ошибка TLS handshake при проверке HTTPS. 
+Назначено на группу: Команда антифрода 
+DION: https://meet.bank.local/room/siem",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
+"Авария 1 категории
+[EM-82923] (https://servicedesk.ru/EM-82923) 
+ИС: Anti-Fraud Engine 
+Описание: Отсутствует heartbeat от es-search01.dc.local. Подозрение на сбой гипервизора.
+DION: https://meet.bank.local/room/fraud
+Автор: Морозов Денис Сергеевич",INFRA_HYPERVISOR_HEARTBEAT_LOST,10
+"Авария: EM-00708
+ИС: JHA Core Banking
+Описание: Сервис systemd на doc-prod01 в состоянии failed.
+Назначено на группу: Инфобез (SIEM)
+DION: https://meet.bank.local/room/siem",INFRA_POSTGRES_SERVICE_STATUS_FAILED,21
+"Контур: ИФТ
+EM-12875 
+ИС: Backups (Veeam) 
+Описание: Высокая загрузка CPU > 86% на core01.bank.lan. Наблюдается деградация производительности. 
+Куратор: Ковалёва Татьяна Сергеевна 
+DION: https://meet.bank.local/room/linux
+Коллеги от ИС 394, просьба подключиться к аварийной конференции",INFRA_CPU_HIGH_USAGE,7
+"Авария: EM-13940
+ИС: Data Warehouse
+Описание: 3001
+Назначено на группу: Messaging Support
+DION: https://meet.bank.local/room/netops",OTHER,27
+"Контур: ПРЕПРОД
+EM-12998 
+ИС: EDM (Master Data) 
+Описание: Критическое заполнение файловой системы /pg_walarchive на pg-cluster03.dc.local. Util = 82%. 
+Куратор: Алексеева Дарья Николаевна 
+DION: https://meet.bank.local/room/linux
+Коллеги от ИС 603, просьба подключиться к аварийной конференции",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"Авария 1 категории
+[EM-82132] (https://servicedesk.ru/EM-82132) 
+ИС: Backups (Veeam) 
+Описание: Недоступен порт 443 на bi-report01.dc.local. Проверка HTTPS завершилась ошибкой TLS handshake.
+DION: https://meet.bank.local/room/linux
+Автор: Морозов Денис Сергеевич",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
+"Авария: EM-01338
+ИС: Oracle RAC Cluster
+Описание: Сервис systemd на nexus01 в состоянии failed.
+Назначено на группу: File Transfer
+DION: https://meet.bank.local/room/dwh",INFRA_POSTGRES_SERVICE_STATUS_FAILED,21
+"Авария: EM-10464 
+ИС: SWIFT Gateway 
+Описание: Ошибка репликации PostgreSQL. Replica lag = 3880 сек. Хост: exch-owa02.corp.local. 
+Назначено на группу: Эксплуатация Kubernetes 
+DION: https://meet.bank.local/room/esb
+Тех.стек:
+OS:
+Rocky Linux 8.9 - preprod
+Red Hat Enterprise Linux 9.0 - preprod
+Red Hat Enterprise Linux 9.0 - preprod
+
+
+БД:
+atm-mgr03.bank.lan - MySQL
+sap-fi01.prod.bank.lan - MS SQL",OTHER,27
+"Авария: EM-01442
+ИС: GitLab CI
+Описание: Пороговое значение сети превышено: RX > 99 Mbps на интерфейсе eth0 хоста keycloak01.
+Назначено на группу: Инфобез (SIEM)
+DION: https://meet.bank.local/room/oracle",INFRA_NETWORK_BANDWIDTH_EXCEEDED,16
+"Авария: EM-01039
+ИС: ElasticSearch
+Описание: Отклонение метрики latency > 72 ms на узле smb-files01.
+Назначено на группу: Network Operations
+DION: https://meet.bank.local/room/siem",INFRA_NETWORK_LATENCY_RTT,17
+"Подозрение на широкомасштабный сбой по КЕ: Loan Origination System_PROD, более 15 аварий за 15 минут 
+Авария: [EM-90623] (https://servicedesk.ru/EM-90623)
+DION: https://meet.bank.local/room/monitoring",INFRA_SYSTEM_WIDESPREAD_FAILURE_ALERT,24
+"Авария EM-92377 - Высокая нагрузка CPU (>95%) на sap-fi01.prod.bank.lan. Замечено замедление отклика сервиса. ИС: SWIFT Gateway 
+Описание: 
+DION: https://meet.bank.local/room/siem
+
+Требуется помощь POSTGRE",INFRA_CPU_HIGH_USAGE,7
+"Устранена авария 1 категории EM-40030
+Время устранения: 2025-09-28 11:23:53
+Описание: Ошибка соединения с БД устранена. Listener перезаупщен.",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"ФинБанк:
+🔔Частичная недоступность системы: SIEM
+Описание: Недоступность части функционала. Узел redis-cache02.prod.bank.lan. HTTP 5xx / таймауты. 
+Время обнаружения: 01.09.2025 01:09 (МСК)
+Ожидаемое время восстановления: 02.04.2025 09:16 (МСК)
+Номер аварии: PB1349",APP_FINBANK_FUNCTIONAL_UNAVAILABILITY,2
+"Авария: EM-15508
+ИС: SIEM
+Описание: Задержка обработки платежей, очередь в Kafka > 120к сообщений.
+Назначено на группу: Middleware Support
+DION: https://meet.bank.local/room/mobile",OTHER,27
+"Авария: EM-0141
+ИС: Kafka Bus
+Описание: Превышен порог количества ошибок в логах на хосте smb-files01 (errors=74).
+Назначено на группу: Сеть и телеком
+DION: https://meet.bank.local/room/netops",INFRA_HARDWARE_OR_LOG_THRESHOLD,9
+"Авария 10656
+ИС: Data Warehouse
+Описание: Утечка соединений в пуле JDBC. Connection pool exhausted.
+Назначено на группу: Инфобез (SIEM)
+DION: https://meet.bank.local/room/sftp",INFRA_JDBC_CONNECTION_POOL_EXHAUSTED,11
+"Авария: [EM-20226] (https://servicedesk.ru/EM-20226) 
+ИС: Payments API 
+Описание: Критическое заполнение /pg_walarcihve на tms-srv02.bank.lan (Util=83%). 
+Назначено на группу: Сопровождение АБС 
+DION: https://meet.bank.local/room/fraud",OTHER,27
+"Авария: [EM-41595] (https://servicedesk.ru/EM-41595) 
+ИС: CRM Banking Suite 
+Описание: Повышенная нагрузка CPU (>95%) на crm-web01.corp.local. Замечено деградация отклика. 
+Назначено на группу: Служба каталогов и SSO 
+DION: https://meet.bank.local/room/fraud",INFRA_CPU_HIGH_USAGE,7
+"Авария: EM-01915
+ИС: Deposits Back-Office
+Описание: Падение агента мониторинга. Нет heartbeat от exch-owa02.
+Назначено на группу: Oracle DB Team
+DION: https://meet.bank.local/room/netops",INFRA_MONITORING_AGENT_DOWN,14
+"Авария: EM-04626
+ИС: Anti-Fraud Engine
+Описание: Недоступен хост edm-app02. ICMP ping timeout.
+Назначено на группу: Команда отчетности BI
+DION: https://meet.bank.local/room/oracle",INFRA_NETWORK_OR_REMOTE_TIMEOUT,18
+"Авария: EM-04794
+ИС: SAP FI
+Описание: Недоступен хост esb-int02. ICMP ping timeout.
+Назначено на группу: Сопровождение СЭД
+DION: https://meet.bank.local/room/netops",INFRA_NETWORK_OR_REMOTE_TIMEOUT,18
+"Авария: EM-15399
+ИС: VPN Gateway
+Описание: 1005
+Назначено на группу: Data Center Ops
+DION: https://meet.bank.local/room/treasury",APP_INTERNAL_ERROR_CODES,3
+тестовое оппповещение,TEST,28
+"Авария: EM-20496 
+ИС: Service Desk 
+Описание: Сбой соединения с БД. ORA-12514: TNS listener не знает указанный сервис k8s-master01.prod.bank.lan. 
+Назначено на группу: Сеть и телеком 
+DION: https://meet.bank.local/room/linux 
+Тех.стек:
+OS: 
+Red Hat Enterprise Linux 8.6 - dr
+CentOS Stream 9 - prod
+Debian 12 - dr
+На системе более 10 БД 
+Вывод только по типу СУБД: 
+Oracle - Целевой
+Cassandra",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Контур: ИФТ
+EM-12790 
+ИС: PostgreSQL Cluster 
+Описание: Повышенная задержка запросов API. Средний RTT = 135 мс. Узел: tms-srv02.bank.lan. 
+Куратор: Григорьев Николай Владимирович 
+DION: https://meet.bank.local/room/netops
+Коллеги от ИС 854, просьба подключиться к аварийной конференции",INFRA_NETWORK_LATENCY_RTT,17
+"Авария: [EM-40686] (https://servicedesk.ru/EM-40686) 
+ИС: Fileshare (SMB) 
+Описание: Ошибка авторизаций по картам: узел gitlab-ci01.corp.local перегружен (CPU > 87%). 
+Назначено на группу: Команда AML 
+DION: https://meet.bank.local/room/monitoring",APP_CARD_AUTH_BUSINESS_ERROR,1
+"Авария 2 категории
+[EM-81699] (https://servicedesk.ru/EM-81699) 
+ИС: ElasticSearch 
+Описание: Сбой соединения с БД. ORA-12514 на узле sap-fi01.prod.bank.lan.",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Авария 10754
+ИС: PostgreSQL Cluster
+Описание: Ошибка записи на файловую шару SMB. Код 64.
+Назначено на группу: Oracle DB Team
+DION: https://meet.bank.local/room/vpn",INFRA_STORAGE_RO_OR_MOUNT_FAIL,23
+"Зарегистрирован инцидент INC-100510
+Приоритет: Высокий 
+
+РИС: ИС-740
+
+КЕ: ngw20.prod.dc.local
+Описание: /var/log : Util = 87 %, Free = 266.24 GB, Total = 2 TB
+
+Конференция проходит в комнате https://meet.bank.local/room/siem",INFRA_DISK_SPACE_CRITICAL,8
+"Контур: ИФТ
+EM-11195 
+ИС: GitLab CI 
+Описание: Сбой соединения с базой данных. ORA-12514 на sap-fi01.prod.bank.lan. 
+Куратор: Иванов Сергей Петрович 
+DION: https://meet.bank.local/room/postgres
+Коллеги от ИС 952, просьба подключиться к аварийной конференции",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Авария: [EM-71983] (https://servicedesk.ru/EM-71983) 
+ИС: Reporting BI Описание: !!Учебная авария!! Отсутствует heartbeat от depos-bof01.prod.bank.lan. Подозрение на сбой гипервизора. 
+Назначено на группу: Команда антифрода 
+DION: https://meet.bank.local/room/siem",INFRA_HYPERVISOR_HEARTBEAT_LOST,10
+"Авария: EM-15032
+ИС: Nexus Repo
+Описание: 1014
+Назначено на группу: Служба каталогов и SSO
+DION: https://meet.bank.local/room/keycloak",APP_INTERNAL_ERROR_CODES,3
+"Авария: [EM-71719] (https://servicedesk.ru/EM-71719) 
+ИС: ESB Integration Описание: !!Учебная авария!! Сбой соединения с БД. ORA-12514 на узле core01.bank.lan. 
+Назначено на группу: Сопровождение SWIFT 
+DION: https://meet.bank.local/room/oracle",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Сервис: Сервис подписания документов
+ИС сервиса: 368, 657, 432, 602, 523
+Описание: Критическое заполнение файловой системы /pg_walarchive на vpn-gw01.bank.lan. Util = 80%.
+
+Авария: [EM-91364] (https://servicedesk.ru/EM-91364)
+РИС: 523
+Назначено на группу: Платёжные системы
+DION: https://meet.bank.local/room/devops",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"Контур: ИФТ
+EM-11567 
+ИС: SAP FI 
+Описание: Повышенная задержка запросов API. Средний RTT = 369 мс. Узел: atm-mgr03.bank.lan. 
+Куратор: Соколова Ирина Владимировна 
+DION: https://meet.bank.local/room/linux
+Коллеги от ИС 31, просьба подключиться к аварийной конференции",INFRA_NETWORK_LATENCY_RTT,17
+"Сервис: Сервис автоплатежей
+ИС сервиса: 474, 864, 355
+Описание: Недоступность API авторизации. HTTP 500 на rac-node1.prod.bank.lan.
+
+Авария: [EM-51271] (https://servicedesk.ru/EM-51271)
+РИС: 474
+Назначено на группу: DevOps
+DION: https://meet.bank.local/room/oracle",APP_API_AUTH_500_ERROR,0
+"Авария EM-91338 - Ошибка авторизаций по картам. Узел exch-owa02.corp.local перегружен (CPU > 96%). ИС: Mobile Banking API 
+Описание: 
+DION: https://meet.bank.local/room/linux",APP_CARD_AUTH_BUSINESS_ERROR,1
+"Авария 2 категории
+[EM-80229] (https://servicedesk.ru/EM-80229) 
+ИС: ElasticSearch 
+Описание: Недоступность API авторизации. HTTP 500 на exch-owa02.corp.local. Ошибка: connection timeout.",APP_API_AUTH_500_ERROR,0
+"https://servicedesk.ru/EM-60338
+ИС: Mobile Banking API
+Описание: Высокая нагрузка CPU (>95%) на mb-api01.prod.bank.lan. Замечено замедление отклика сервиса.
+DION: https://meet.bank.local/room/siem",INFRA_CPU_HIGH_USAGE,7
+"Авария 2 категории
+[EM-82004] (https://servicedesk.ru/EM-82004) 
+ИС: JHA Core Banking 
+Описание: Отсутствует heartbeat от redis-cache02.prod.bank.lan. Подозрение на сбой гипервизора.
+DION: https://meet.bank.local/room/core
+Автор: Григорьев Илья Алексеевич",OTHER,27
+"Устранена авария 2 категории EM-40259
+Время устранения: 2025-09-25 06:46:50
+Описание: Ошибка соединения с БД устранена. Listener перезапущен.",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Авария: [EM-42915] (https://servicedesk.ru/EM-42915) 
+ИС: ElasticSearch 
+Описание: Сбой соединения с БД. ORA-12514: TNS listener не знает указанный сервис на tms-srv02.bank.lan. 
+Назначено на группу: Поддержка почтовых сервисов 
+DION: https://meet.bank.local/room/devops",INFRA_ORACLE_TNS_LISTENER_ERROR,19
+"Авария: EM-11782
+ИС: SWIFT Gateway
+Описание: 1007
+Назначено на группу: Kubernetes Ops
+DION: https://meet.bank.local/room/siem",INFRA_K8S_POD_RESTART_FAILURE,12
+"Авария: [EM-42241] (https://servicedesk.ru/EM-42241) 
+ИС: SAP FI 
+Описание: Сервис postgresql на es-search01.dc.local в состоянии failed. Репликация остановлена. 
+Назначено на группу: Команда мониторинга 
+DION: https://meet.bank.local/room/devops",INFRA_POSTGRES_SERVICE_STATUS_FAILED,21
+"Авария: EM-02922
+ИС: JHA Core Banking
+Описание: Недоступен порт 443 на сервере sap-fi01. Проверка HTTPS неуспешна.
+Назначено на группу: Поддержка почтовых сервисов
+DION: https://meet.bank.local/room/backup",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
+"Сервис: Сервис обработки претензий
+ИС сервиса: 288, 709, 72, 228, 411
+Описание: Ошибка репликации PostgreSQL. Replica lag = 4261 сек. Хост: pay-hub01.prod.bank.lan.
+
+Авария: [EM-91873] (https://servicedesk.ru/EM-91873)
+РИС: 411
+Назначено на группу: Сопровождение БД Oracle
+DION: https://meet.bank.local/room/fraud",INFRA_POSTGRES_REPLICATION_LAG,20
+"Авария: EM-13098
+ИС: Internet Banking
+Описание: 1006
+Назначено на группу: Эксплуатация Kubernetes
+DION: https://meet.bank.local/room/es",INFRA_K8S_POD_RESTART_FAILURE,12
+"Авария: EM-01515
+ИС: ESB Integration
+Описание: Температура CPU превысила 70°C на siem-core01.
+Назначено на группу: Поддержка почтовых сервисов
+DION: https://meet.bank.local/room/oracle",INFRA_HARDWARE_OR_LOG_THRESHOLD,9
+"Авария: EM-31985 
+ИС: Kafka Bus 
+Описание: Критическое заполнение файловой системы /pg_walarchive на vpn-gw01.bank.lan. Util = 90%. 
+Назначено на группу: Сопровождение DWH 
+DION: https://meet.bank.local/room/fraud 
+Тех.стек: 
+OS: 
+Red Hat Enterprise Linux 8.6 - dr
+Windows Server 2022 - preprod
+Windows Server 2019 - prod 
+
+На системе более 10 БД 
+Вывод только по типу СУБД: 
+MS SQL
+Oracle
+Redis - Целевой
+MongoDB
+
+Список ЗНИ по ИС отправлен в почтовом сообщении",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"Авария: EM-13757 
+ИС: Nexus Repo 
+Описание: Отсутствует heartbeat от smb-files01.corp.local. Подозрение на сбой гипервизора. 
+Назначено на группу: Инфраструктура ЦОД 
+DION: https://meet.bank.local/room/fraud
+Тех.стек:
+OS:
+CentOS Stream 9 - preprod
+AIX 7.3 - preprod
+AIX 7.3 - prod
+
+
+БД:
+swift-gw01.corp.local - Redis
+pg-cluster03.dc.local - Redis
+rac-node1.prod.bank.lan - MongoDB",INFRA_HYPERVISOR_HEARTBEAT_LOST,10
+"Авария 10794
+ИС: Redis Cache
+Описание: Ошибка аутентификации SSO. Некорректная подпись SAML.
+Назначено на группу: Команда антифрода
+DION: https://meet.bank.local/room/cards",INFRA_NETWORK_OR_REMOTE_TIMEOUT,18
+"Авария: EM-11247 
+ИС: CRM Banking Suite 
+Описание: Отсутствует heartbeat от exch-owa02.corp.local. Подозрение на сбой гипервизора. 
+Назначено на группу: Платёжные системы 
+DION: https://meet.bank.local/room/core
+Тех.стек:
+OS:
+CentOS Stream 9 - dr
+Debian 12 - prod
+
+
+БД:
+core02.bank.lan - MongoDB
+sftp-gw02.prod.bank.lan - Cassandra
+fraud-eng02.prod.bank.lan - MongoDB",INFRA_HYPERVISOR_HEARTBEAT_LOST,10
+"Авария: EM-0556
+ИС: Okta SSO
+Описание: Превышен порог количества ошибок в логах на хосте bi-report01 (errors=85).
+Назначено на группу: Инфобез (SIEM)
+DION: https://meet.bank.local/room/oracle",INFRA_HARDWARE_OR_LOG_THRESHOLD,9
+"Подозрение на широкомасштабный сбой по КЕ: SIEM_PROD, более 15 аварий за 15 минут 
+Авария: [EM-90401] (https://servicedesk.ru/EM-90401)
+DION: https://meet.bank.local/room/dwh",INFRA_SYSTEM_WIDESPREAD_FAILURE_ALERT,24
+"Зарегистрирован инцидент INC-100362
+Приоритет: Высокий 
+
+РИС: 536
+
+КЕ: xcuaj-mlyfzy16ho4c0002lk
+Описание: PostgreSQL replication lag = 3055s on DB aml, replication_slot=slot_wal. WAL archive backlog increasing.
+
+Конференция проходит в комнате https://meet.bank.local/room/kafka",INFRA_POSTGRES_REPLICATION_LAG,20
+"Сервис: Сервис учёта депозитов
+ИС сервиса: 52, 728, 760, 337
+Описание: Ошибка репликации PostgreSQL. Replica lag = 3032 сек. Хост: veeam-proxy01.bank.lan.
+
+Авария: [EM-91863] (https://servicedesk.ru/EM-91863)
+РИС: 337
+Назначено на группу: Администрирование Windows
+DION: https://meet.bank.local/room/esb",OTHER,27
+"Контур: ПРЕПРОД
+EM-11304 
+ИС: ElasticSearch 
+Описание: Критическое заполнение файловой системы /pg_walarchive на authsrv01.prod.bank.lan. Util = 95%. 
+Куратор: Петров Алексей Андреевич 
+DION: https://meet.bank.local/room/dwh
+Коллеги от ИС 321, просьба подключиться к аварийной конференции",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"ФинБанк:
+✅Авария устранена: SAP FI 
+Описание: Ошибка авторизаций по картам. Узел okta-idp01.corp.local перегружен (CPU > 89%). Выполнено ограничение RPS. 
+Дата и время восстановления: 15.09.2025 03:40 (МСК) Номер аварии: PB159",APP_CARD_AUTH_BUSINESS_ERROR,1
+"Авария: [EM-41280] (https://servicedesk.ru/EM-41280) 
+ИС: SIEM 
+Описание: Ошибка репликации PostgreSQL. Replica lag = 5812 сек. Хост: smb-files01.corp.local. 
+Назначено на группу: Служба резервного копирования 
+DION: https://meet.bank.local/room/core",INFRA_POSTGRES_REPLICATION_LAG,20
+"Авария: EM-10805 
+ИС: AML Monitoring 
+Описание: Недоступность API авторизации. HTTP 500 при обращении к /auth на sap-fi01.prod.bank.lan. 
+Назначено на группу: Команда антифрода 
+DION: https://meet.bank.local/room/core
+Тех.стек:
+OS:
+Windows Server 2019 - test
+Debian 12 - preprod
+Windows Server 2022 - dr
+
+
+БД:
+okta-idp01.corp.local - MySQL
+los-app03.prod.bank.lan - Redis
+core02.bank.lan - MS SQL",APP_API_AUTH_500_ERROR,0
+"Зарегистрирован инцидент INC-100296
+Приоритет: Высокий 
+
+РИС: ИС-240
+
+КЕ: 3d7tf-cnfkdk0t33il0002lk
+Описание: Сервис sshd на узле перешёл в состояние crashed. Restart policy triggered.
+
+Конференция проходит в комнате https://meet.bank.local/room/vpn",INFRA_POSTGRES_SERVICE_STATUS_FAILED,21
+"Авария 2 категории
+[EM-80259] (https://servicedesk.ru/EM-80259) 
+ИС: JHA Core Banking 
+Описание: Критическое заполнение файловой системы /pg_walarchive на fraud-eng02.prod.bank.lan. Util = 85%.",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"Авария 2 категории
+[EM-82122] (https://servicedesk.ru/EM-82122) 
+ИС: JHA Core Banking 
+Описание: Недоступен порт 443 на es-search01.dc.local. Проверка HTTPS завершилась ошибкой TLS handshake.
+DION: https://meet.bank.local/room/linux
+Автор: Техническая учетная запись monitoring@bank.local",OTHER,27
+"Авария: EM-03958
+ИС: Kubernetes Platform
+Описание: Недоступен порт 443 на сервере keycloak01. Проверка HTTPS неуспешна.
+Назначено на группу: Служба каталогов и SSO
+DION: https://meet.bank.local/room/linux",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
+"Авария: EM-15056
+ИС: ATM Monitoring System
+Описание: Timeout при обращении к Redis. Соединение разорвано.
+Назначено на группу: Инфраструктура ЦОД
+DION: https://meet.bank.local/room/payhub",INFRA_NETWORK_OR_REMOTE_TIMEOUT,18
+"Авария: EM-11799 
+ИС: Okta SSO 
+Описание: Сбой соединения с БД. ORA-12514: TNS listener не знает указанный сервис okta-idp01.corp.local. 
+Назначено на группу: Эксплуатация Kubernetes 
+DION: https://meet.bank.local/room/fraud
+Тех.стек:
+OS:
+Red Hat Enterprise Linux 8.6 - dr
+Red Hat Enterprise Linux 9.0 - prod
+
+
+БД:
+gitlab-ci01.corp.local - Redis
+keycloak01.corp.local - MongoDB
+authsrv01.prod.bank.lan - PostgreSQL",OTHER,27
+"Авария: EM-31753 
+ИС: OpCon Batch 
+Описание: Ошибка репликации PostgreSQL. Replica lag = 3991 сек. Хост: opcon-batch01.prod.bank.lan. 
+Назначено на группу: Поддержка цифровых каналов 
+DION: https://meet.bank.local/room/oracle 
+Тех.стек: 
+OS: 
+Debian 12 - preprod
+Windows Server 2022 - dr
+Red Hat Enterprise Linux 9.0 - test 
+
+На системе более 10 БД 
+Вывод только по типу СУБД: 
+Redis
+Cassandra - Целевой
+
+Список ЗНИ по ИС отправлен в почтовом сообщении",INFRA_POSTGRES_REPLICATION_LAG,20
+"Авария: EM-11610
+ИС: OpCon Batch
+Описание: Высокая загрузка CPU ( > 95% ) на узле sd-app01.
+Назначено на группу: SWIFT Support
+DION: https://meet.bank.local/room/cards",INFRA_CPU_HIGH_USAGE,7
+"Зарегистрирован инцидент INC-100102
+Приоритет: Высокий 
+
+РИС: 662
+
+КЕ: dwh28.dr.intra.bank
+Описание: Oracle tablespace SYSAUX usage 89%. Free = 6.4 GB, Total = 152.54 GB. Autoextend disabled.
+
+Конференция проходит в комнате https://meet.bank.local/room/esb",INFRA_DISK_SPACE_CRITICAL,8
+[Отправить письмо](mailto:volkov.z@finance.org),EMAIL,5
+"Зарегистрирован инцидент INC-100523
+Приоритет: Высокий 
+
+РИС: 979
+
+КЕ: 1c14.dr.intra.bank
+Описание: PostgreSQL replication lag = 2438s on DB payments, replication_slot=slot_wal. WAL archive backlog increasing.
+
+Конференция проходит в комнате https://meet.bank.local/room/crm",INFRA_POSTGRES_REPLICATION_LAG,20
+"Авария: EM-14160
+ИС: EDM (Master Data)
+Описание: Высокая загрузка CPU ( > 95% ) на узле aml-node01.
+Назначено на группу: Сопровождение DWH
+DION: https://meet.bank.local/room/keycloak",INFRA_CPU_HIGH_USAGE,7
+"Авария: EM-30483 
+ИС: VPN Gateway 
+Описание: Падение pod'ов Kubernetes в namespace prod. Deployment перезапускается на doc-prod01.intra.bank. 
+Назначено на группу: Сопровождение СЭД 
+DION: https://meet.bank.local/room/netops 
+Тех.стек: 
+OS: 
+Windows Server 2022 - preprod
+Red Hat Enterprise Linux 8.6 - test 
+
+На системе более 10 БД 
+Вывод только по типу СУБД: 
+PostgreSQL - Целевой
+MongoDB
+
+Список ЗНИ по ИС отправлен в почтовом сообщении",INFRA_K8S_POD_RESTART_FAILURE,12
+"Авария: EM-02049
+ИС: Keycloak IdP
+Описание: Недоступен хост rac-node1. ICMP ping timeout.
+Назначено на группу: Администрирование Windows
+DION: https://meet.bank.local/room/dwh",INFRA_NETWORK_OR_REMOTE_TIMEOUT,18
+"Авария 1 категории
+[EM-81103] (https://servicedesk.ru/EM-81103) 
+ИС: CRM Banking Suite 
+Описание: Отсутствует heartbeat от bi-report01.dc.local. Подозрение на сбой гипервизора.",INFRA_HYPERVISOR_HEARTBEAT_LOST,10
+Выполнен: 16.08.25 Контроль загрузки ФХД за предыдущий отчетный день,APP_ZOD,4
+"Авария: [EM-40458] (https://servicedesk.ru/EM-40458) 
+ИС: Backups (Veeam) 
+Описание: Падение pod'ов в namespace prod. Kubernetes перезапускает deployment на kafka01.prod.bank.lan. 
+Назначено на группу: Сопровождение СЭД 
+DION: https://meet.bank.local/room/linux",INFRA_K8S_POD_RESTART_FAILURE,12
+"Авария: EM-04213
+ИС: VPN Gateway
+Описание: Сервис systemd на 1c-prod01 в состоянии failed.
+Назначено на группу: Anti-Fraud
+DION: https://meet.bank.local/room/infra",INFRA_POSTGRES_SERVICE_STATUS_FAILED,21
+"Авария: EM-30609 
+ИС: SFTP Gateway 
+Описание: Падение pod'ов Kubernetes в namespace prod. Deployment перезапускается на bi-report01.dc.local. 
+Назначено на группу: Сопровождение БД Oracle 
+DION: https://meet.bank.local/room/monitoring 
+Тех.стек: 
+OS: 
+CentOS Stream 9 - dr
+AIX 7.3 - preprod
+Debian 12 - dr 
+
+На системе более 10 БД 
+Вывод только по типу СУБД: 
+Redis - Целевой
+Cassandra
+
+Список ЗНИ по ИС отправлен в почтовом сообщении",INFRA_K8S_POD_RESTART_FAILURE,12
+"Контур: ПРЕПРОД
+EM-11273 
+ИС: Monitoring (Zabbix) 
+Описание: Высокая загрузка CPU > 91% на redis-cache02.prod.bank.lan. Наблюдается деградация производительности. 
+Куратор: Кузнецов Дмитрий Иванович 
+DION: https://meet.bank.local/room/k8s
+Коллеги от ИС 439, просьба подключиться к аварийной конференции",INFRA_CPU_HIGH_USAGE,7
+"Контур: ПРЕПРОД
+EM-10844 
+ИС: Payment Hub 
+Описание: Недоступен сервис авторизации. HTTP 500 при обращении к /auth на nexus01.corp.local. 
+Куратор: Орлова Елена Дмитриевна 
+DION: https://meet.bank.local/room/windows
+Коллеги от ИС 596, просьба подключиться к аварийной конференции",OTHER,27
+"Авария: EM-12633
+ИС: PostgreSQL Cluster
+Описание: Переполнение очереди в RabbitMQ. Доставки не происходят.
+Назначено на группу: Messaging Support
+DION: https://meet.bank.local/room/vpn",INFRA_MESSAGE_BROKER_QUEUE_OVERFLOW,13
+"Авария: EM-13781
+ИС: SMA Scheduler
+Описание: Повышенный отклик OWA. Ответы 503. IIS reset не помогает.
+Назначено на группу: Сопровождение СЭД
+DION: https://meet.bank.local/room/esb",INFRA_WEB_SERVER_IIS_OWA_FAIL,26
+"Авария 1 категории
+[EM-82777] (https://servicedesk.ru/EM-82777) 
+ИС: Monitoring (Zabbix) 
+Описание: Недоступность API авторизации. HTTP 500 на dwh-etl01.dc.local. Ошибка: connection timeout.
+DION: https://meet.bank.local/room/linux
+Автор: Шевченко Артем Викторович",APP_API_AUTH_500_ERROR,0
+"Авария 1 категории
+[EM-81634] (https://servicedesk.ru/EM-81634) 
+ИС: Payments API 
+Описание: Ошибка репликации PostgreSQL. Replica lag = 5300 сек. Хост: kafka01.prod.bank.lan.",INFRA_POSTGRES_REPLICATION_LAG,20
+"Авария: EM-01385
+ИС: JHA Core Banking
+Описание: Превышен порог CPU usage > 82% на хосте vpn-gw01.
+Назначено на группу: Payment Systems
+DION: https://meet.bank.local/room/linux",INFRA_HARDWARE_OR_LOG_THRESHOLD,9
+"Авария: EM-11297 
+ИС: Deposits Back-Office 
+Описание: Критическое заполнение файловой системы /pg_walarchive на fraud-eng02.prod.bank.lan. Util = 93%. 
+Назначено на группу: Служба резервного копирования 
+DION: https://meet.bank.local/room/fraud
+Тех.стек:
+OS:
+Debian 12 - test
+Debian 12 - dr
+
+
+БД:
+nexus01.corp.local - MongoDB
+gitlab-ci01.corp.local - Cassandra
+k8s-master01.prod.bank.lan - MS SQL",INFRA_POSTGRES_WALARCHIVE_FULL,22
+"Авария 2 категории
+[EM-81963] (https://servicedesk.ru/EM-81963) 
+ИС: Backups (Veeam) 
+Описание: Недоступен порт 443 на authsrv01.prod.bank.lan. Проверка HTTPS завершилась ошибкой TLS handshake.",INFRA_TLS_HANDSHAKE_OR_PORT_443,25
